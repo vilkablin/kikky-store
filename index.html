@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Kikky store</title>
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="shortcut icon" href="media/icons/logo.svg" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <!-- ШАПКА САЙТА  -->
+    <header class="w-100">
+      <div class="container">
+        <div class="header-inner w-100 d-flex-rows">
+          <div class="logo d-flex-rows">
+            <p>Kikky store</p>
+          </div>
+
+          <nav class="d-flex-rows">
+            <a href="index.html" class="nav_a">Главная</a>
+            <a href="catalog.html" class="nav_a">Каталог</a>
+            <a href="new.html" class="nav_a">Новинки</a>
+            <a href="contacts.html" class="nav_a">Контакты</a>
+          </nav>
+
+          <div class="to_busket">
+            <img src="media/icons/busket.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- БАННЕР -->
+
+    <div class="intro w-100">
+      <div class="container">
+        <div class="intro-inner w-100 d-flex-rows">
+          <img src="media/mainPage/1.png" alt="" />
+          <img src="media/mainPage/1a.png" alt="" />
+
+          <div class="intro-info d-flex-columns">
+            <h1>Kikky Store -</h1>
+            <p>Свобода, сила, стиль.</p>
+            <a href="catalog.html" class="btn">Перейти в катлог</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Популярные товары  -->
+
+    <div class="populars w-100 py-60">
+      <div class="container">
+        <div class="populars-inner w-100">
+          <h2>Популярные товары</h2>
+          <div class="swiper swiper-theme">
+            <div class="swiper-wrapper slider-items">
+              <div class="swiper-slide">
+                <div class="slide-item d-flex-columns">
+                  <img class="change" src="media/mainPage/1.png" onmouseover="this.src='media/mainPage/1a.png'" onmouseout="this.src='media/mainPage/1.png'" alt="" />
+                  <h3>Футболка TAY SON мужская</h3>
+                  <div class="colors d-flex-rows">
+                    <img src="media/icons/white.svg" alt="" class="active" />
+                    <img src="media/icons/black.svg" alt="" />
+                  </div>
+                  <h4>2750₽</h4>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="slide-item d-flex-columns">
+                  <img class="change2" src="media/mainPage/2.png" onmouseover="this.src='media/mainPage/2a.png'" onmouseout="this.src='media/mainPage/2.png'" alt="" />
+                  <h3>Футболка TAY SON мужская</h3>
+                  <div class="colors d-flex-rows">
+                    <img src="media/icons/white.svg" alt="" />
+                    <img src="media/icons/black.svg" alt="" class="active" />
+                  </div>
+                  <h4>2750₽</h4>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="slide-item d-flex-columns">
+                  <img src="media/mainPage/3a.png" alt="" />
+                  <h3>Футболка Yanwen Yirin мужская</h3>
+                  <div class="colors d-flex-rows">
+                    <img src="media/icons/white.svg" alt="" />
+                    <img src="media/icons/black.svg" alt="" class="active" />
+                  </div>
+                  <h4>2100₽</h4>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="slide-item d-flex-columns">
+                  <img class="change" src="media/mainPage/1.png" onmouseover="this.src='media/mainPage/1a.png'" onmouseout="this.src='media/mainPage/1.png'" alt="" />
+                  <h3>Футболка TAY SON мужская</h3>
+                  <div class="colors d-flex-rows">
+                    <img src="media/icons/white.svg" alt="" class="active" />
+                    <img src="media/icons/black.svg" alt="" />
+                  </div>
+                  <h4>2750₽</h4>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="slide-item d-flex-columns">
+                  <img class="change2" src="media/mainPage/2.png" onmouseover="this.src='media/mainPage/2a.png'" onmouseout="this.src='media/mainPage/2.png'" alt="" />
+                  <h3>Футболка TAY SON мужская</h3>
+                  <div class="colors d-flex-rows">
+                    <img src="media/icons/white.svg" alt="" />
+                    <img src="media/icons/black.svg" alt="" class="active" />
+                  </div>
+                  <h4>2750₽</h4>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="slide-item d-flex-columns">
+                  <img src="media/mainPage/3a.png" alt="" />
+                  <h3>Футболка Yanwen Yirin мужская</h3>
+                  <div class="colors d-flex-rows">
+                    <img src="media/icons/white.svg" alt="" />
+                    <img src="media/icons/black.svg" alt="" class="active" />
+                  </div>
+                  <h4>2100₽</h4>
+                </div>
+              </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- FOOTER  -->
+
+    <footer class="w-100">
+      <div class="container">
+        <div class="footer-inner w-100 d-flex-rows">
+          <div class="logo">
+            <img src="media/icons/logo.svg" alt="">
+          </div>
+          <nav class="d-flex-rows">
+            <a href="index.html" class="nav_a">Главная</a>
+            <a href="catalog.html" class="nav_a">Каталог</a>
+            <a href="new.html" class="nav_a">Новинки</a>
+            <a href="contacts.html" class="nav_a">Контакты</a>
+          </nav>    
+        </div>
+        <hr>
+        <p>2024 Kikky store</p>
+      </div>
+    </footer>
+
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
+    ></script>
+    <script defer src="slider.js"></script>
+  </body>
+</html>

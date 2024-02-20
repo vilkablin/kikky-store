@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Kikky store</title>
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="shortcut icon" href="media/icons/logo.svg" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <!-- ШАПКА САЙТА  -->
+    <header class="w-100">
+      <div class="container">
+        <div class="header-inner w-100 d-flex-rows">
+          <div class="logo d-flex-rows">
+            <p>Kikky store</p>
+          </div>
+
+          <nav class="d-flex-rows">
+            <a href="index.html" class="nav_a">Главная</a>
+            <a href="catalog.html" class="nav_a">Каталог</a>
+            <a href="new.html" class="nav_a">Новинки</a>
+            <a href="contacts.html" class="nav_a">Контакты</a>
+          </nav>
+
+          <div class="to_busket">
+            <img src="media/icons/busket.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- баннер  -->
+
+    <div class="new-intro w-100 py-60">
+      <div class="container">
+        <div class="new-inner d-flex-columns w-100">
+          <h1>Новая коллекция 705</h1>
+          <h2>Уже доступна к покупке</h2>
+        </div>
+      </div>
+    </div>
+
+    <!-- новинки  -->
+
+    <div class="news w-100 py-60">
+      <div class="container">
+        <div class="news-inner d-flex-columns w-100">
+          <h2>Новинки</h2>
+
+          <div class="news-items w-100">
+            <div class="slide-item d-flex-columns">
+              <img class="change" src="media/newPage/29.png" alt="" />
+              <h3>Лонгслив 705 мужской</h3>
+              <div class="colors d-flex-rows">
+                <img src="media/icons/white.svg" alt=""  />
+                <img src="media/icons/black.svg" alt="" class="active"/>
+              </div>
+              <h4>2750₽</h4>
+            </div>
+
+            <div class="slide-item d-flex-columns">
+              <img class="change2" src="media/newPage/30.png" alt="" />
+              <h3>Лонгслив 705 женский</h3>
+              <div class="colors d-flex-rows">
+                <img src="media/icons/white.svg" alt="" />
+                <img src="media/icons/black.svg" alt="" class="active" />
+              </div>
+              <h4>2750₽</h4>
+            </div>
+
+            <div class="slide-item d-flex-columns">
+              <img src="media/newPage/31.png" alt="" />
+              <h3>Футболка 705 унисекс</h3>
+              <div class="colors d-flex-rows">
+                <img src="media/icons/white.svg" alt="" />
+                <img src="media/icons/black.svg" alt="" class="active" />
+              </div>
+              <h4>2100₽</h4>
+            </div>
+
+            <div class="slide-item d-flex-columns">
+              <img src="media/newPage/32.png" alt="" />
+              <h3>Футболка 705 унисекс</h3>
+              <div class="colors d-flex-rows">
+                <img src="media/icons/white.svg" alt="" />
+                <img src="media/icons/black.svg" alt="" class="active" />
+              </div>
+              <h4>2100₽</h4>
+            </div>
+
+            <div class="slide-item d-flex-columns">
+              <img src="media/newPage/33.png" alt="" />
+              <h3>Бутылка 705</h3>
+              <div class="colors d-flex-rows">
+                <img src="media/icons/white.svg" alt="" />
+                <img src="media/icons/black.svg" alt="" class="active" />
+              </div>
+              <h4>2100₽</h4>
+            </div>
+          </div>
+
+          <div id="load-more">Смотреть больше</div>
+        </div>
+      </div>
+    </div>
+     <!-- FOOTER  -->
+
+     <footer class="w-100">
+      <div class="container">
+        <div class="footer-inner w-100 d-flex-rows">
+          <div class="logo">
+            <img src="media/icons/logo.svg" alt="">
+          </div>
+          <nav class="d-flex-rows">
+            <a href="index.html" class="nav_a">Главная</a>
+            <a href="catalog.html" class="nav_a">Каталог</a>
+            <a href="new.html" class="nav_a">Новинки</a>
+            <a href="contacts.html" class="nav_a">Контакты</a>
+          </nav>    
+        </div>
+        <hr>
+        <p>2024 Kikky store</p>
+      </div>
+    </footer>
+
+
+    <script>
+      let loadMoreBtn = document.querySelector("#load-more");
+
+      let currentItem = 3;
+
+      loadMoreBtn.onclick = () => {
+        let items = [...document.querySelectorAll(".news-items .slide-item")];
+        for (let i = currentItem; i < currentItem + 2; i++) {
+          items[i].style.display = "inline-block";
+        }
+
+        currentItem += 3;
+
+        if(currentItem >= items.length){
+          loadMoreBtn.style.display = "none";
+        }
+      };
+    </script>
+  </body>
+</html>
